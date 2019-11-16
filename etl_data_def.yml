@@ -1,0 +1,86 @@
+data_set_def:
+    - data_name  : ETL1
+      data_format: M-Type
+
+    - data_name  : ETL2
+      data_format: ETL2
+
+    - data_name  : ETL3
+      data_format: C-Type
+
+    - data_name  : ETL4
+      data_format: C-Type
+      is_hiragana: true
+
+    - data_name  : ETL5
+      data_format: C-Type
+
+    - data_name  : ETL6
+      data_format: M-Type
+
+    - data_name  : ETL7
+      data_format: M-Type
+      is_hiragana: true
+
+    - data_name  : ETL8G
+      data_format: ETL8G
+
+    - data_name  : ETL9G
+      data_format: ETL9G
+
+
+data_format_def:
+
+    # M-Type data format (ETL1, ETL6, ETL7)
+    M-Type:
+        record_size: 2052
+        resolution: [64, 63]
+        record_format: '>H2sH6BI4H4B4x2016s4x'
+        char_code_index: 3
+        image_data_index: 18
+        bit_depth: 4
+        char_set: 'JIS_X_0201'
+
+
+    # C-Type data format (ETL3, ETL4, ETL5)
+    C-Type:
+        record_size: 2952
+        resolution: [72, 76]
+        record_format: '>9xB206x2736s'
+        # '2*uint:36,  uint:8, pad:28, uint:8, pad:28, 4*uint:6, pad:12,
+        # 15*uint:36, pad:1008, bytes:21888'
+        char_code_index: 0
+        image_data_index: 1
+        bit_depth: 4
+        char_set: 'JIS_X_0201'
+
+
+    ETL2:
+        record_size: 2745
+        resolution: [60, 60]
+        record_format: '>21x2s22x2700s'
+        # 'int:36, uint:6, pad:30, 6*uint:6, 6*uint:6, pad:24, 2*uint:6, pad:180, bytes:2700')
+        char_code_index: 0
+        image_data_index: 1
+        bit_depth: 6
+        char_set: 'CO-59'
+
+
+    ETL8G:
+        record_size: 8199
+        resolution: [128, 127]
+        record_format: '>2H8sI4B4H2B30x8128s11x'
+        char_code_index: 1
+        image_data_index: 14
+        bit_depth: 4
+        char_set: 'JIS_X_0208'
+
+
+    ETL9G:
+        record_size: 8199
+        resolution: [128, 127]
+        record_format: '>2H8sI4B4H2B34x8128s7x'
+        char_code_index: 1
+        image_data_index: 14
+        bit_depth: 4
+        char_set: 'JIS_X_0208'

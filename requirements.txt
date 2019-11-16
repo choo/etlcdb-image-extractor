@@ -1,0 +1,2 @@
+-e git://github.com/choo/fsutils#egg=fsutils-1.0.0
+Pillow==5.2.0
