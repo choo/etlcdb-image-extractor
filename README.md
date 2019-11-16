@@ -1,3 +1,4 @@
+
 ETLCDB Image Extractor
 ======================
 
@@ -15,11 +16,7 @@ Datasets is a little difficult to handle with because they have unique binary da
 This utility enables to extract all charcter images that link unicode code point.
 Though ETLCDB is compiled in 9 datasets (ETL-1 to ETL-9), this utility can handle with all of those datasets.
 
-About ETLCDB
-------------
-
-- [ETL Character Database](http://etlcdb.db.aist.go.jp/)
-- data is free to use but *allowed only for non-commercial use*. cf.) [Conditions of Use](http://etlcdb.db.aist.go.jp/obtaining-etl-character-database)
+ETLCDB dataset is free to use but **allowed only for non-commercial use**. cf.) [Conditions of Use](http://etlcdb.db.aist.go.jp/obtaining-etl-character-database)
 
 
 Usage
@@ -54,18 +51,19 @@ Licence
 Memos
 -----
 
+  
 
 ### About each dataset
 
 - Summarized descriptions about datasets is as follows (Details is in the officail web page).
 
 |#  |hira|kata|kanji|symb|total |each     |sample  |year  |reso   |size    | format|info|
-|---|----|----|-----|----|------|---------|--------|------|-------|--------|-------|----|
-|1  | 0  |51  |   0 |48  |  99  |av.1400  |141319  |1973  |64x63  |101 MB  | M-type|自由手書き, num(10) + alpha(26) + symbol(12)|
-|2  | ?  | ?  |   ? | ?  |2184  |av.  24  | 52796  |1973  |60x60  | 40 MB  |       |印刷漢字, 6 bits, CO-59 characters|
+|--:|---:|---:|----:|---:|-----:|--------:|-------:|-----:|------:|-------:|------:|---|
+|1  | 0  |51  |   0 |48  |  99  |approx.1400  |141319  |1973  |64x63  |101 MB  | M-type|自由手書き, num(10) + alpha(26) + symbol(12)|
+|2  | ?  | ?  |   ? | ?  |2184  |approx.24  | 52796  |1973  |60x60  | 40 MB  |       |印刷漢字, 6 bits, CO-59 characters|
 |3  | 0  | 0  |   0 |48  |  48  |    200  |  9600  |1974  |72x76  |  9 MB  | C-type|    |
 |4  |51  | 0  |   0 | 0  |  51  |    120  |  6120  |1974  |72x76  |  5 MB  | C-type|    |
-|5  | 0  |51  |   0 | 0  |  51  | av.200  | 10608  |1975  |72x76  |  8 MB  | C-type|104 people|
+|5  | 0  |51  |   0 | 0  |  51  |approx.200  | 10608  |1975  |72x76  |  8 MB  | C-type|104 people|
 |6  | 0  |46  |   0 |68  | 114  |   1383  |157662  |1976  |64x63  |159 MB  | M-type|    |
 |7  |46  | 0  |   0 | 2  |  48  |    160  | 16800  |1977  |64x63  | 36 MB  | M-type|hira, dakuten, han-dakuten|
 |8  |75  | 0  | 881 | 0  | 956  |    160  |152960  |1980  |128x127|135 MB  |       |JIS X 0208|
@@ -95,17 +93,16 @@ Memos
 
 - ETL8 and 9
     - almost the same, but have different size of data padding just before the image data
-
+  
 
 ### About JIS X 0201/0208
 
-**** JIS X 0201
+#### JIS X 0201
 
 - mapping file was downloaded from [here](http://www.unicode.org/Public/MAPPINGS/OBSOLETE/EASTASIA/JIS/JIS0201.TXT)
 - JIS X 0201 and Unicode mappings is on [this web page](http://charset.7jp.net/jis0201.html), but useful only for Japanese users.
 
-**** JIS X 0208
+#### JIS X 0208
 
 - mapping file was downloaded from [here](http://unicode.org/Public/MAPPINGS/OBSOLETE/EASTASIA/JIS/JIS0208.TXT)
 - JIS X 0208 (1990) and Unicode mappings is on [this web page](http://charset.7jp.net/jis0208.html), but useful only for Japanese users.
-
