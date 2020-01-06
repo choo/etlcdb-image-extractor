@@ -9,12 +9,13 @@ Overview
 --------
 
 [ETL Character Database (ETLCDB)](http://etlcdb.db.aist.go.jp/) is Japanese character datasets including both handwritten and machine-printed.
-Characters consists of Japanese daily used characters such as hiragana, katakana and kanji, numerals, symbols and Latin alphabets.
+Characters consists of Japanese daily used characters such as hiragana, katakana, kanji, numerals, symbols and Latin alphabets.
 
 Datasets is a little difficult to handle with because they have unique binary data format rather than a modern data format like JSON or XML.
 
 This utility enables to extract all charcter images that link unicode code point.
-Though ETLCDB is compiled in 9 datasets (ETL-1 to ETL-9), this utility can handle with all of those datasets.
+Though ETLCDB contains 9 datasets (ETL-1 to ETL-9) and each of those has different data format,
+this utility can handle with all of those datasets.
 
 ETLCDB dataset is free to use but **allowed only for non-commercial use**. cf.) [Conditions of Use](http://etlcdb.db.aist.go.jp/obtaining-etl-character-database)
 
@@ -23,7 +24,7 @@ Usage
 -----
 
 1. Download the dataset.
-   To download ETLCDB dataset, you must register from the official website, and get the password for the download link.
+   To download ETLCDB dataset, you must register form the official website and get the password for the download link.
 2. git clone this repository
 ```
     git clone https://github.com/choo/etlcdb-image-extractor.git
@@ -39,7 +40,7 @@ Usage
 ```
    You can know options for execution using `--help` option
 
-Note: tested only on the environment of Ubuntu16.04 + Python3.6
+Note: tested only on Ubuntu16.04 + Python3.6 environment
 
 
 Licence
