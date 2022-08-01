@@ -67,8 +67,8 @@ Memos
 |5  | 0  |51  |   0 | 0  |  51  |approx.200  | 10608  |1975  |72x76  |  8 MB  | C-type|104 people|
 |6  | 0  |46  |   0 |68  | 114  |   1383  |157662  |1976  |64x63  |159 MB  | M-type|    |
 |7  |46  | 0  |   0 | 2  |  48  |    160  | 16800  |1977  |64x63  | 36 MB  | M-type|hira, dakuten, han-dakuten|
-|8  |75  | 0  | 881 | 0  | 956  |    160  |152960  |1980  |128x127|135 MB  |       |JIS X 0208|
-|9  |71  | 0  |2965 | 0  |3036  |    200  |607200  |1984  |128x127|561 MB  |       |JIS X 0208|
+|8G  |75  | 0  | 881 | 0  | 956  |    160  |152960  |1980  |128x127|135 MB  |       |JIS X 0208|
+|9G  |71  | 0  |2965 | 0  |3036  |    200  |607200  |1984  |128x127|561 MB  |       |JIS X 0208|
 
 
 ### Detailed Data format of each dataset
@@ -92,7 +92,7 @@ Memos
         - Note that on the table, 1 byte is refered to as 6 bits
     - all characters are half width
 
-- ETL8 and 9
+- ETL8G and 9G
     - almost the same, but have different size of data padding just before the image data
   
 
